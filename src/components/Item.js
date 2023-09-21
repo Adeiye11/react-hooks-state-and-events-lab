@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Item({ name, category }) {
-  const [isInCart, setIsInCart] = React.useState(false)
+  const [isInCart, setIsInCart] = useState(false)
   const cartClass = isInCart ? "in-cart" : ""
   const buttonTxt = isInCart ? "Remove From Cart" : "Add To Cart"
   const buttonClass = isInCart ? "remove" : "add"
